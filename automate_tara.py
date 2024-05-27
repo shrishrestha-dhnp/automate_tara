@@ -9,9 +9,9 @@ import boto3
 # Initialize the WebDriver (Chrome in this example)
 driver = webdriver.Chrome()
 
-def login_and_set_options(memberID, memberDob, service_value="99214 - Office O/P Est Mod 30-39 Min"):
+def login_and_set_options(memberID, memberDob, service_value=" "):
     # URL of the login page
-    login_url = 'https://taradev.deerhold.com'
+    login_url = ' '
     
     # Load the login page
     driver.get(login_url)
@@ -101,7 +101,7 @@ def send_email_notification(memberID, message):
     print("Email notification sent:", response)
 
 if __name__ == '__main__':
-    memberID = '123456'
-    memberDob = '01/01/1980'
-    service_value = '99214 - Office O/P Est Mod 30-39 Min'
+    memberID = ' '
+    memberDob = ' '
+    service_value = ' '
     login_and_set_options(memberID, memberDob, service_value)

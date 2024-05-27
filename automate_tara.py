@@ -78,10 +78,10 @@ def search_service_and_notify(driver, memberID, service_value):
 def send_email_notification(memberID, message):
     # Create a Boto3 session with AWS credentials
     session = boto3.Session(
-        aws_access_key_id='access_key',
-        aws_secret_access_key='secret_access_key',
-        aws_session_token='session_token',
-        region_name='region'  # Optional: specify the AWS region 
+        aws_access_key_id=' ',
+        aws_secret_access_key=' ',
+        aws_session_token=' ',
+        region_name=' '  # Optional: specify the AWS region 
     )
     
     # Initialize the SNS client
@@ -92,7 +92,7 @@ def send_email_notification(memberID, message):
     
     # Send the email
     response = client.publish(
-        TopicArn='arn:aws:sns:us-east-1:227008985806:test',  # Update with your SNS topic ARN
+        TopicArn=' ',  # Update with your SNS topic ARN
         Message=full_message,
         Subject=message
     )

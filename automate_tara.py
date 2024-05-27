@@ -78,10 +78,10 @@ def search_service_and_notify(driver, memberID, service_value):
 def send_email_notification(memberID, message):
     # Create a Boto3 session with AWS credentials
     session = boto3.Session(
-        aws_access_key_id='ASIATJWWKHLHPVTP56FP',
-        aws_secret_access_key='K75d9Gci/4R0ki1cA81Vci3eYQtOnU+Yufx6bG4k',
-        aws_session_token='IQoJb3JpZ2luX2VjEFUaCXVzLWVhc3QtMiJHMEUCIQCAGX/2Uq9HMzcuLmpwiQfQ8/cIFgdCfMCBxnfFesuE/QIgQLTaiPaH+l3yxBkzM2IlwWht9kabgWgl0TjqGqFPpr4qmgMIzv//////////ARACGgwyMjcwMDg5ODU4MDYiDInbG0jBr+/HZzaaPiruAn/R3v6A/SFCss03gIptvzE/nrIOVkBqmoDVYdD+kpgsie+k2hBDQmVE/QGb1wHulh0Kr7osdkCGWZwQy+U7+ajr/J6d6glB5ZM53rtjf7M1HcABG6ezVTnY9qXqOqiHXpnbSgVTbgdyYD4TNkVIsQLkVXfRHJaUdCduP8zQUINqw1PitrHbyLZMCAXhQahqKGnYGjKOJBTtSDqOXNyUrSWNw22c2I5W58Kum7kpTpSqp97vysx6VqEW9X7KOs2kKeJmIFjVX5AUFunf8+qRIeN8CvufzgqYYa/vsgdkCJVc7+N/RG51jfKi9w9QmLFAA66IBFHQiE94d/+yJwPQaXq6ZwBJHwr4tThWSWcO0Se0FVskVEPlm9ZJAYJXU9sK3MYWH901nsKlF0ChUDyEfQpwxdj5HJCgEzPTKl9tR9WdpcuWWxKporjYHZ3I/06Od80rKWEt3RigS06KSREOFkVah+5Qt4xXTeSZcXta0DCXo9CyBjqmAebhBax3OapJpu+9+sg6M58i9TpUk5zQaN4YUe4qOMAr4YTqld3rpAx5AkOda5KF41WaTnKIcgoZav8Fh0ZSDR66hj0IxAE1/n5ztgtdujVat1MR2SOo/+TrLmhraE+HVKOK5WSZtL1/gITJ8jtnFDSMDE/zWpAnRIrJqrOX62x5bM6Uok8eYXxTMTEAVMSD/HdDtnCSFmzeKHpXiHigbmnkVFclthY=',
-        region_name='us-east-1'  # Optional: specify the AWS region 
+        aws_access_key_id='access_key',
+        aws_secret_access_key='secret_access_key',
+        aws_session_token='session_token',
+        region_name='region'  # Optional: specify the AWS region 
     )
     
     # Initialize the SNS client
